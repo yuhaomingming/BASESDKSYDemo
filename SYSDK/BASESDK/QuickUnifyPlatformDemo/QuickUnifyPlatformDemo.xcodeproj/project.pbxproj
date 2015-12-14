@@ -19,6 +19,7 @@
 		66FEC6A31C1EB60400E5E199 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEC6A21C1EB60400E5E199 /* UIKit.framework */; };
 		66FEC6A51C1EB60800E5E199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEC6A41C1EB60800E5E199 /* Foundation.framework */; };
 		66FEC6A81C1EC33700E5E199 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEC6A71C1EC33700E5E199 /* CoreGraphics.framework */; };
+		66FEC6D01C1ECDB900E5E199 /* CocoaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FEC6CF1C1ECDB900E5E199 /* CocoaTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		66FEC6A41C1EB60800E5E199 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		66FEC6A61C1EC30B00E5E199 /* QuickUnifyPlatformDemo-info.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickUnifyPlatformDemo-info.pch"; sourceTree = "<group>"; };
 		66FEC6A71C1EC33700E5E199 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66FEC6CE1C1ECDB900E5E199 /* CocoaTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaTest.h; sourceTree = "<group>"; };
+		66FEC6CF1C1ECDB900E5E199 /* CocoaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +221,8 @@
 				661AC2B71BE0A12300DCBFAA /* Main.storyboard */,
 				661AC2B81BE0A12300DCBFAA /* ViewController.h */,
 				661AC2B91BE0A12300DCBFAA /* ViewController.m */,
+				66FEC6CE1C1ECDB900E5E199 /* CocoaTest.h */,
+				66FEC6CF1C1ECDB900E5E199 /* CocoaTest.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				661AC38C1BE0A12400DCBFAA /* AppDelegate.m in Sources */,
 				661AC38F1BE0A12400DCBFAA /* main.m in Sources */,
 				661AC3911BE0A12400DCBFAA /* ViewController.m in Sources */,
+				66FEC6D01C1ECDB900E5E199 /* CocoaTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
