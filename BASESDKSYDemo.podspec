@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.36"
+  s.version      = "0.0.37"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -15,13 +15,13 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/yuhaomingming/BASESDKSYDemo.git", :tag => s.version}
   s.public_header_files = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.requires_arc            = true
-  s.pod_target_xcconfig = { "ENABLE_BITCODE" => "NO"，"OTHER_LDFLAGS" => "-lObjC","VALID_ARCHS" => "arm64 armv7","ARCHS" => "arm64 armv7"}
+  s.pod_target_xcconfig = { "ENABLE_BITCODE" => "NO","OTHER_LDFLAGS" => "-lObjC","VALID_ARCHS" => "arm64 armv7","ARCHS" => "arm64 armv7"}
   s.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.resources = "Common/SDK/Platform/BASESDK/Plist/QuickManifest.plist"
   s.vendored_frameworks = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework"
   s.libraries           = "stdc++","commonCrypto"
   s.frameworks          = "UIKit","Foundation","CoreGraphics"
-  
+
   #spec.ios.vendored_library = 'Libraries/libProj4.a'
   #spec.vendored_libraries = 'libProj4.a', 'libJavaScriptCore.a'
 end
