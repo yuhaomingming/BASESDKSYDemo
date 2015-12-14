@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.33"
+  s.version      = "0.0.34"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -19,8 +19,8 @@ Pod::Spec.new do |s|
   s.ios.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.ios.resources = "Common/SDK/Platform/BASESDK/Plist/QuickManifest.plist"
   s.ios.vendored_frameworks = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework"
-  s.ios.libraries           = "c++"
-  s.ios.frameworks          = "UIKit", "Foundation"
+  s.ios.libraries           = "stdc++"
+  s.ios.frameworks          = "UIKit", "Foundation","CoreGraphics"
   
   #spec.ios.vendored_library = 'Libraries/libProj4.a'
   #spec.vendored_libraries = 'libProj4.a', 'libJavaScriptCore.a'
