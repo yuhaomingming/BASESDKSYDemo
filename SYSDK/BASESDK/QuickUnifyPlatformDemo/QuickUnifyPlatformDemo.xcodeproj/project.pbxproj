@@ -18,6 +18,7 @@
 		661AC3911BE0A12400DCBFAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 661AC2B91BE0A12300DCBFAA /* ViewController.m */; };
 		66FEC6A31C1EB60400E5E199 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEC6A21C1EB60400E5E199 /* UIKit.framework */; };
 		66FEC6A51C1EB60800E5E199 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEC6A41C1EB60800E5E199 /* Foundation.framework */; };
+		66FEC6A81C1EC33700E5E199 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEC6A71C1EC33700E5E199 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		661AC2B91BE0A12300DCBFAA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		66FEC6A21C1EB60400E5E199 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66FEC6A41C1EB60800E5E199 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66FEC6A61C1EC30B00E5E199 /* QuickUnifyPlatformDemo-info.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickUnifyPlatformDemo-info.pch"; sourceTree = "<group>"; };
+		66FEC6A71C1EC33700E5E199 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FEC6A81C1EC33700E5E199 /* CoreGraphics.framework in Frameworks */,
 				66FEC6A51C1EB60800E5E199 /* Foundation.framework in Frameworks */,
 				66FEC6A31C1EB60400E5E199 /* UIKit.framework in Frameworks */,
 				6205169C1BF43446000375D6 /* libstdc++.tbd in Frameworks */,
@@ -77,6 +81,7 @@
 		6205169D1BF43495000375D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				66FEC6A71C1EC33700E5E199 /* CoreGraphics.framework */,
 				66FEC6A41C1EB60800E5E199 /* Foundation.framework */,
 				66FEC6A21C1EB60400E5E199 /* UIKit.framework */,
 				6205169B1BF43446000375D6 /* libstdc++.tbd */,
@@ -110,6 +115,7 @@
 		661AC06C1BE0A10900DCBFAA /* QuickUnifyPlatformDemo */ = {
 			isa = PBXGroup;
 			children = (
+				66FEC6A61C1EC30B00E5E199 /* QuickUnifyPlatformDemo-info.pch */,
 				6205169D1BF43495000375D6 /* Frameworks */,
 				661AC0841BE0A12200DCBFAA /* Common */,
 				661AC07E1BE0A10900DCBFAA /* Info.plist */,
@@ -397,6 +403,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../../Common/SDK/Platform/BASESDK/SYFramework",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickUnifyPlatformDemo/QuickUnifyPlatformDemo-info.pch";
 				INFOPLIST_FILE = QuickUnifyPlatformDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -424,6 +432,8 @@
 					"$(inherited)",
 					"$(SRCROOT)/../../../Common/SDK/Platform/BASESDK/SYFramework",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuickUnifyPlatformDemo/QuickUnifyPlatformDemo-info.pch";
 				INFOPLIST_FILE = QuickUnifyPlatformDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
