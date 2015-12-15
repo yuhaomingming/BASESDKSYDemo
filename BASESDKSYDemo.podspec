@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.43"
+  s.version      = "0.0.44"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 
     "ENABLE_BITCODE" => "NO",
     "OTHER_LDFLAGS" => "-lObjC",
-    "FRAMEWORK_SEARCH_PATHS" => "Common/SDK/Platform/BASESDK/SYFramework/",
+    "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Common/SDK/Platform/BASESDK/SYFramework",
     "OTHER_LDFLAGS[arch=arm64]" => other_ldflags,
     "OTHER_LDFLAGS[arch=armv7]"  => other_ldflags,
     "OTHER_LDFLAGS[arch=armv7s]" => other_ldflags
