@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.44"
+  s.version      = "0.0.45"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -29,11 +29,9 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS[arch=armv7s]" => other_ldflags
   }
   #"VALID_ARCHS" => "arm64 armv7","ARCHS" => "arm64 armv7"
-
-
-  s.source_files  = "Common/Source/Demo/CocoaTest.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
+  s.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.resources = "Common/SDK/Platform/BASESDK/Plist/QuickManifest.plist"
-  #s.vendored_frameworks = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework"
+  s.vendored_frameworks = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework"
   #s.libraries           = "stdc++","commonCrypto"
   #s.frameworks          = "UIKit","Foundation","CoreGraphics"
 
