@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     ' -lcommonCrypto -lstdc++'
 
   s.pod_target_xcconfig = { "ENABLE_BITCODE" => "NO","OTHER_LDFLAGS" => "-lObjC"
-  ,"FRAMEWORK_SEARCH_PATHS" => "Common/SDK/Platform/BASESDK/SYFramework/"
+  ,"FRAMEWORK_SEARCH_PATHS" => "Common/SDK/Platform/BASESDK/SYFramework/",
     "OTHER_LDFLAGS[arch=arm64]" => other_ldflags,
     "OTHER_LDFLAGS[arch=armv7]"  => other_ldflags,
     "OTHER_LDFLAGS[arch=armv7s]" => other_ldflags
