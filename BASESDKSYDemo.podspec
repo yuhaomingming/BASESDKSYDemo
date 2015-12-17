@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.50"
+  s.version      = "0.0.51"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -20,9 +20,9 @@ Pod::Spec.new do |s|
     "ENABLE_BITCODE" => "NO",
     "OTHER_LDFLAGS" => "-lObjC",
     "VALID_ARCHS" => "arm64 armv7",
-    "ARCHS" => "arm64 armv7",
     "ONLY_ACTIVE_ARCH" => "NO"
   }
+  #"ARCHS" => "arm64 armv7",
 
   s.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.resources = "Common/SDK/Platform/BASESDK/Plist/QuickManifest.plist"
