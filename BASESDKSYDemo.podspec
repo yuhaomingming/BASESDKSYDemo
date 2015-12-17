@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.52"
+  s.version      = "0.0.53"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
   s.xcconfig = { 
     "VALID_ARCHS" => "arm64 armv7",
     "ONLY_ACTIVE_ARCH" => "NO"
+    "ARCHS": "$(ARCHS_STANDARD)"
   }
   #"ARCHS[sdk=iphonesimulator*]": "$(ARCHS_STANDARD_32_BIT)",
   #"ARCHS[sdk=iphoneos*]": "$(ARCHS_STANDARD)"
