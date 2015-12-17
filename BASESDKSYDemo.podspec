@@ -16,14 +16,12 @@ Pod::Spec.new do |s|
   s.public_header_files = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.requires_arc            = true
 
-  s.pod_target_xcconfig = { 
-    "ENABLE_BITCODE" => "NO",
-    "OTHER_LDFLAGS" => "-lObjC",
+  s.xcconfig = { 
     "VALID_ARCHS" => "arm64 armv7",
     "ONLY_ACTIVE_ARCH" => "NO"
   }
-  #"ARCHS" => "arm64 armv7",
-
+  #"ARCHS[sdk=iphonesimulator*]": "$(ARCHS_STANDARD_32_BIT)",
+  #"ARCHS[sdk=iphoneos*]": "$(ARCHS_STANDARD)"
   s.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.resources = "Common/SDK/Platform/BASESDK/Plist/QuickManifest.plist"
   s.vendored_frameworks = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework"
