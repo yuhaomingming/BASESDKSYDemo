@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.46"
+  s.version      = "0.0.48"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS" => "-lObjC",
     "VALID_ARCHS" => "arm64 armv7",
     "ARCHS" => "$(ARCHS_STANDARD)",
-    "ONLY_ACTIVE_ARCH": "NO"
+    "ONLY_ACTIVE_ARCH" => "NO"
   }
 
   s.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
