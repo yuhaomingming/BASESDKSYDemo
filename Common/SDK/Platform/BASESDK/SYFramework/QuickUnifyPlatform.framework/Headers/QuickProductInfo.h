@@ -10,7 +10,7 @@
 
 //游戏角色购买商品信息,所有属性不能为nil或者@""
 @interface QuickProductInfo : NSObject
-//@property(nonatomic, copy)NSString* union_id;//联盟 ID
+//@property(nonatomic, copy)NSString* union_id;//联盟ID
 //@property(nonatomic, copy)NSString* game_id;//游戏唯一标识
 
 @property(nonatomic, copy)NSString* server_id;//自定义游戏服务器编号

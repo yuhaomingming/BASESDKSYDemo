@@ -11,16 +11,16 @@
 #import "QuickConstant.h"
 #import "QuickPlatformName.h"
 
+//qupOnPause 没有接入显示弹窗，qupHandleWithapplication没有接入显示弹窗
 
 #define QUPLog(fmt, ...) NSLog((@"\n[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
 
 @interface QuickUnifyPlatform : NSObject
 
+
 +(id)getInstance;
 
-//以下接口必须接入(1,2,3,4,5,6,8)
-
-
+//以下接口必须接入(1,2,3,4,5,6)
 /**
  *  1.初始化,require
  *
@@ -58,6 +58,8 @@
 -(void)qupHandleWithapplication:(id)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
 
 
+
+//以下接口可选接入(7,8,9,10,11,12,13)
 /**
  *  7.显示个人中心,optional,主动调用时候，SDK没有此方法时候自己处理
  */
@@ -81,7 +83,7 @@
 - (NSDictionary *)qupSettingInfo;
 
 /**
- *  11.获取聚合SDK的版本,require
+ *  11.获取SDK的版本,require
  */
 - (NSString *)qupSDKVersion;
 
@@ -90,18 +92,21 @@
  */
 - (QuickPlatformName)qupPlatformName;
 
-
 /**
  *  13.判断方法在平台的SDK中是否存在,require,此方法适用于其他optional方法。
  */
 - (BOOL)qupRespondsToSelector:(SEL)platformSel;
 
 
-//以下方法系统调用，用户不可调用。
-
+//一下系统调用，用户不可调用。(14,15)
+/**
+ *  14.是否显示日志,在plist配置文件里的islog体现
+ */
 - (BOOL)qupIsOpenLog;
 
-
+/**
+ *  15.显示平台的信息,字符串无规律。
+ */
 - (NSString *)qupPlatformInfo;
 
 @end

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BASESDKSYDemo"
-  s.version      = "0.0.57"
+  s.version      = "0.0.58"
   s.summary      = "A BASESDKSYDemo."
   s.description  = <<-DESC
                    A CocoaPods BASESDKSYDemo
@@ -17,17 +17,15 @@ Pod::Spec.new do |s|
   s.requires_arc            = true
 
   s.xcconfig = { 
-    "VALID_ARCHS" => "arm64 armv7",
-    "ARCHS" => "arm64 armv7"
+       "OTHER_LDFLAGS" => "-ObjC",
+       "ENABLE_BITCODE" => "NO"
   }
-  #"ARCHS[sdk=iphonesimulator*]": "$(ARCHS_STANDARD_32_BIT)",
-  #"ARCHS[sdk=iphoneos*]": "$(ARCHS_STANDARD)"
   s.source_files  = "Common/Source/Demo/*.{h,m}","Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework/Headers/*.h"
   s.resources = "Common/SDK/Platform/BASESDK/Plist/QuickManifest.plist"
   s.vendored_frameworks = "Common/SDK/Platform/BASESDK/SYFramework/QuickUnifyPlatform.framework"
 
-  s.libraries           = "stdc++","commonCrypto"
-  s.frameworks          = "UIKit","Foundation","CoreGraphics"
+  #s.libraries           = "stdc++","commonCrypto"
+  #s.frameworks          = "UIKit","Foundation","CoreGraphics"
   #spec.ios.vendored_library = 'Libraries/libProj4.a'
   #spec.vendored_libraries = 'libProj4.a', 'libJavaScriptCore.a'
 end
